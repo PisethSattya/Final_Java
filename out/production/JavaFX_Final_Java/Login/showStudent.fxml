@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="950.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.ShowStudentController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1100.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_home" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_Logout" text="Logout" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="410.0" layoutY="30.0" text="Show Students" textFill="#2e86c1">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableshow" layoutY="80.0" prefHeight="800.0" prefWidth="1100.0">
+        <columns>
+          <TableColumn fx:id="tbl_id" prefWidth="100.0" style="-fx-alignment: CENTER;" text="ID" />
+          <TableColumn fx:id="tbl_name" prefWidth="175.0" style="-fx-alignment: center;" text="Name" />
+            <TableColumn fx:id="tbl_guardianname" prefWidth="175.0" style="-fx-alignment: center;" text="GuardianName" />
+            <TableColumn fx:id="tbl_gender" prefWidth="100.0" style="-fx-alignment: center;" text="Gender" />
+            <TableColumn fx:id="tbl_phonenumber" prefWidth="200.0" style="-fx-alignment: center;" text="Phone Number" />
+            <TableColumn fx:id="tbl_city" prefWidth="175.0" style="-fx-alignment: center;" text="City" />
+            <TableColumn fx:id="tbl_class" prefWidth="174.0" style="-fx-alignment: center;" text="Class" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="497.0" layoutY="890.0" mnemonicParsing="false" onAction="#btnback" prefHeight="40.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@project Image/back01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="952.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.ShowAdminsController">
+   <children>
+      <MenuBar layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="1100.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_home" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_Logout" text="Logout" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#MenuItem_about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="420.0" layoutY="40.0" text="Show Admins" textFill="#2e86c1">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableshow" layoutX="10.0" layoutY="90.0" prefHeight="785.0" prefWidth="1100.0">
+         <columns>
+            <TableColumn fx:id="tbl_id" prefWidth="150.0" style="-fx-alignment: CENTER;" text="ID" />
+            <TableColumn fx:id="tbl_name" minWidth="0.0" prefWidth="250.0" style="-fx-alignment: center;" text="Name" />
+            <TableColumn fx:id="tbl_email" prefWidth="320.0" style="-fx-alignment: center;" text="Email" />
+            <TableColumn fx:id="tbl_password" prefWidth="385.0" style="-fx-alignment: center;" text="Password" />
+         </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="507.0" layoutY="888.0" mnemonicParsing="false" onAction="#btnback" prefHeight="25.0" prefWidth="100.0" text="Back">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@project Image/back01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

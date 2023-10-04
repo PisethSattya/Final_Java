@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #2E4053;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Add_adminController">
+   <children>
+      <Label fx:id="login" layoutX="14.0" layoutY="6.0" text="Add Admin" textFill="#fdfefe">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="135.0" text="Username" textFill="#fdfefe">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="294.0" text="Password" textFill="#fdfefe">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail" alignment="TOP_CENTER" layoutX="366.0" layoutY="135.0" prefHeight="30.0" prefWidth="190.0" promptText="Enter Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" alignment="TOP_CENTER" layoutX="366.0" layoutY="294.0" prefHeight="30.0" prefWidth="190.0" promptText="Enter password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnsubmit" layoutX="111.0" layoutY="425.0" mnemonicParsing="false" onAction="#Submit" prefHeight="52.0" prefWidth="140.0" text="Submit" textFill="#17202a">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@project Image/submit01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnback" layoutX="467.0" layoutY="425.0" mnemonicParsing="false" onAction="#back" prefHeight="52.0" prefWidth="122.0" text="Back" textFill="#17202a">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@project Image/back01.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="147.0" layoutY="214.0" text="Email" textFill="#fdfefe">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="field_email" alignment="TOP_CENTER" layoutX="366.0" layoutY="214.0" prefHeight="30.0" prefWidth="190.0" promptText="Enter email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>
